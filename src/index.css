@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap);
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+:root{
+  --inp: white;
+  --body-bg:#FAFAFA;
+}
+*{box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+
+
+}
+.dark-mode{
+  --inp: #25273D;
+  --body-bg:#171823;
+  color: white;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+align-items: center;
+background-color:var(--body-bg) ;
+transition: 0.3s;
+}
+
+.container{
+  width: 100%;
+  max-width: 540px;
+  padding: 20px 24px;
+  
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+.container header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+
+}
+.container header h1{
+
+font-size: 40px;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 15px;
+text-align: left;
+
+}
+#root{
+  width: 100%;
+
+}
+.appContainer{
+  background-image: url(../src/images/Bitmap.png);
+  width: 100%;
+  height: 300px;
+}
+input{
+  height: 64px;
+width: 100%;
+background-color: var(--inp);
+border: none;
+outline: none;
+box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+border-radius: 5px;
+padding: 23px 72px;
+margin-top: 48px;
+
+
+font-size: 18px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: -0.25px;
+text-align: left;
+
+
+}
+input::placeholder{
+  font-family: Josefin Sans;
+font-size: 18px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: -0.25px;
+text-align: left;
+
+
+
+}
+ul{
+  list-style: none;
+  width: 100%;
+  max-width: 540px;
+  background-color: green;
+
+  margin-top: 24px;
+  
+  background-color: var(--inp);
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+border-radius: 5px;
+}
+li{
+
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: start;
+  gap: 24px;
+font-size: 18px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: -0.25px;
+text-align: left;
+border-bottom: 1px solid #E3E4F1;
+position: relative;
+
+}
+span{
+ 
+  display: inline-block;
+  border: solid 1px mediumpurple;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  animation:round 2s 1 linear;;
+ 
+
+
+}
+@keyframes round{
+  0%{
+      transform:  rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+button{
+  border: none;
+  outline: none;
+  background-color: inherit;
+  position: absolute;
+ 
+  left: 450px;
+  top: 25px;
+}
+button, span:hover{
+  cursor: pointer;
+}
+.sun{
+  display: none;
+}
+form{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
